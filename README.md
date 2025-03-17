@@ -1,20 +1,20 @@
-# Hyper-mac-controls! [![npm-version][npm-badge]][npm-link]
+# Hyper-kali-controls! [![npm-version][npm-badge]][npm-link]
 
-A plugin that makes the close, minimize and maximize buttons look like the macOS window controls. This plugin is tested in both linux and windows.
+A plugin that makes the close, minimize and maximize buttons look like the kali linux window controls. This plugin is tested in both linux and windows.
 
-![hyper-mac-controls][screenshot]
+![hyper-kali-controls][screenshot]
 
 ### Install
 
 **Hyper store**:  
-Install using `hyper i hyper-mac-controls`
+Install using `hyper i hyper-kali-controls`
 
 **Manually**:  
 1. Open Hyper preferences (or edit them manually at `~/.hyper.js`  with your editor).
-2. Update your list of plugins to include hyper-mac-controls, like so:
+2. Update your list of plugins to include hyper-kali-controls, like so:
 ```javascript
 plugins: [
-	'hyper-mac-controls'
+	'hyper-kali-controls'
 ],
 ```
 3. Reload (`Ctrl+Shift+R`) or restart Hyper
@@ -39,7 +39,7 @@ Default value is `true`
 module.exports = {
   config: {
     ...
-      hyperMacControls: {
+      hyperkaliControls: {
         flipped: true,
       }
     ...
@@ -67,6 +67,6 @@ module.exports = {
 MIT © [krve][author]
 
 [screenshot]: https://cloud.githubusercontent.com/assets/5139119/21655977/766986e0-d2bc-11e6-8182-fd48c55c4416.png
-[npm-badge]:  https://img.shields.io/npm/v/hyper-mac-controls.svg?style=flat-square
-[npm-link]:   https://www.npmjs.com/package/hyper-mac-controls
+[npm-badge]:  https://img.shields.io/npm/v/hyper-kali-controls.svg?style=flat-square
+[npm-link]:   https://www.npmjs.com/package/hyper-kali-controls
 [author]:     https://github.com/krve
