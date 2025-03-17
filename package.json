@@ -1,11 +1,11 @@
 {
-  "name": "hyper-mac-controls",
+  "name": "hyper-kali-controls", 
   "version": "1.2.0",
-  "description": "Hyper mac-like window controls on linux or windows",
+  "description": "Hyper kali-like window controls on Windows",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krve/hyper-mac-controls.git"
+    "url": "git+https://github.com/lucas-timeworkstudio/hyper-kali-controls.git"  
   },
   "keywords": [
     "hyper",
@@ -13,8 +13,11 @@
     "hyper-plugin",
     "hyperterm-plugin",
     "plugin",
-    "mac"
+    "kali"
   ],
-  "author": "Kristoffer <kristoffer@krve.io>",
-  "license": "MIT"
+  "author": "Partner of Azurea.dev; Private Author", 
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.0" 
+  }
 }

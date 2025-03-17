@@ -10,7 +10,7 @@ if (isWin == true) {
 exports.decorateConfig = (config) => {
     const pluginConfig = Object.assign({
         flipped: true,
-    }, config.hyperMacControls);
+    }, config.hyperKaliControls);
 
     const windowControls = config.showWindowControls;
 
@@ -34,23 +34,23 @@ exports.decorateConfig = (config) => {
             .header_appTitle {
                 margin-left: -56px;
             }
-            .mac_header {
+            .kali_header {
                 position: fixed;
                 top: 0;
                 ${isLeft ? 'left: 0;' : 'right: 0;'}
                 height: 22px;
                 width: 56px;
             }
-            .mac_actions {
+            .kali_actions {
                 position: absolute;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 top: 0;
             }
-            .mac_header .mac_close,
-            .mac_header .mac_minimize,
-            .mac_header .mac_maximize {
+            .kali_header .kali_close,
+            .kali_header .kali_minimize,
+            .kali_header .kali_maximize {
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
@@ -58,28 +58,28 @@ exports.decorateConfig = (config) => {
                 top: 5px;
                 background-position: -6px;
             }
-            .mac_header .mac_close {
+            .kali_header .kali_close {
                 background-color: #f25056;
                 background-image: url('${dirname}/icons/close.svg');
                 left: ${pluginConfig.flipped ? '5px' : '40px'};
             }
-            .mac_header .mac_close:hover {
+            .kali_header .kali_close:hover {
                 background-image: url('${dirname}/icons/close_hover.svg');
             }
-            .mac_header .mac_minimize {
+            .kali_header .kali_minimize {
                 background-color: #fac536;
                 background-image: url('${dirname}/icons/minimize.svg');
                 left: 23px;
             }
-            .mac_header .mac_minimize:hover {
+            .kali_header .kali_minimize:hover {
                 background-image: url('${dirname}/icons/minimize_hover.svg');
             }
-            .mac_header .mac_maximize {
+            .kali_header .kali_maximize {
                 background-color: #39ea49;
                 background-image: url('${dirname}/icons/maximize.svg');
                 left: ${pluginConfig.flipped ? '40px' : '5px'};
             }
-            .mac_header .mac_maximize:hover {
+            .kali_header .kali_maximize:hover {
                 background-image: url('${dirname}/icons/maximize_hover.svg');
             }
         `
@@ -112,11 +112,11 @@ exports.decorateHeader = (Hyper, { React }) => {
         render() {
             return (
                 React.createElement(Hyper, Object.assign({}, this.props, {
-                    customChildren: React.createElement('div', { className: 'mac_header' },
-                        React.createElement('div', { className: 'mac_actions' },
-                            React.createElement('span', { className: 'mac_close', onClick: this.props.close }),
-                            React.createElement('span', { className: 'mac_minimize', onClick: this.props.minimize }),
-                            React.createElement('span', { className: 'mac_maximize', onClick: this.maximizeApp })
+                    customChildren: React.createElement('div', { className: 'kali_header' },
+                        React.createElement('div', { className: 'kali_actions' },
+                            React.createElement('span', { className: 'kali_close', onClick: this.props.close }),
+                            React.createElement('span', { className: 'kali_minimize', onClick: this.props.minimize }),
+                            React.createElement('span', { className: 'kali_maximize', onClick: this.maximizeApp })
                         )
                     ),
                 }))
